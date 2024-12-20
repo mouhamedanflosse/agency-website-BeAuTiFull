@@ -21,12 +21,12 @@ function removeActive(element) {
 let randomBckg = setInterval(() => {
   if (backgroundOpts[0].classList.contains("active")) {
     let randomNum = Math.floor(Math.random() * 5);
-    landingPage.style.backgroundImage = `url("../iamges/image-slider/img-0${
+    landingPage.style.backgroundImage = `url("/../agency-website-BeAuTiFull/iamges/image-slider/img-0${
       randomNum + 1
     }.jpg")`;
   }
-}, 10000);
-// remove & add background option and insert the option on local storage
+}, 2000);
+// // remove & add background option and insert the option on local storage
 backgroundOpts.forEach((opt) => {
   opt.addEventListener("click", () => {
     removeActive(backgroundOpts);
